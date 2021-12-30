@@ -1,13 +1,163 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway');
+
+
+.App{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: "Montserrat","Raleway"; 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.topWording{
+    color: white;
+    text-align: left;
+    border: 2px solid rgba(6, 108, 148, 0.192);
+    background-image: url(C:\Users\justy\food-app\src\Images\pots-vegetables-harvest.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size:cover;
+    padding:20px;   
 }
+
+.search-form{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    margin:30px 0px 30px 0px;
+}
+
+.search-bar{
+    padding:15px;
+    width:50%;
+    box-shadow: rgba(4, 76, 104, 0.397) 0px 2px 8px 0px;
+    border: none;
+}
+
+.search-button{
+    padding:20px;
+    border:none;
+    width:15%;
+    cursor: pointer;
+    background-color: rgba(2, 30, 37, 0.658);
+    color: white;
+    font-size: 16px;
+    font-family:"Montserrat","Raleway";
+}
+
+
+.search-button:hover{
+    background-color: rgba(2, 30, 37, 0.958);
+}
+
+
+.recipeBox {
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    border:none;
+    border-radius: 40px;
+    box-shadow: rgba(2, 30, 37, 0.958) 0px 25px 25px 0px inset, rgba(2, 30, 37, 0.958) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.212) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.158) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.103) 0px 32px 16px;
+    margin:30px;
+    min-width: 30%;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    background-color: rgb(8, 8, 8);
+    
+    }
+
+.recipeTitle{
+    color: rgba(255, 255, 255, 0.555);
+    text-align: center;
+    }
+
+.foodIngredients{
+    border: 2px solid rgba(40, 5, 121, 0.082);
+    }
+
+.ingredients-part{
+    margin:2rem;
+    padding:2.5rem;
+    border-radius: 40px 0px 40px 0px;
+    color:white;
+    flex-wrap: wrap;
+    background-color: rgba(2, 30, 37, 0.973);
+    opacity:50%;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.image{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width:150px;
+    height: 150px;
+    border:2px solid rgba(6, 1, 39, 0.349);
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.rec.rec-arrow{
+    background-color: rgba(2, 30, 37, 0.973);
+    color:white;
+    margin-left:1.5rem;
+    margin-right:1.5rem;
+    
+}
+
+.rec.rec-arrow:hover {
+    border-radius: 10%;
+    border:3px solid white;
+   
+}
+
+.rec.rec-dot{
+   background-color:rgba(3, 56, 70, 0.973);
+   padding: 0.5rem; 
+   border:3px solid white;
+}
+
+p{
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .topWording{
+        font-size: 13px;  
+    }
+
+    .recipeBox{
+        transform: scale(0.8, 0.8);
+        margin-left:0;
+        margin-right: 0; 
+    }
+
+    .ingredients-part{
+        margin:1.5rem;
+        padding:1.6rem;}
+    
+    .image{
+        width:100px;
+        height: 100px;  
+    }
+
+    .rec.rec-arrow{
+   
+        position:absolute;
+        display: none;
+
+    }
+
+    .rec.rec-dot{
+        padding: 0.3rem;}
+
+   
+    .search-button{
+        width:30%;}
+
+
+}
+
