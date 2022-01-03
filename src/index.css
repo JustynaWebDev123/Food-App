@@ -13,7 +13,7 @@
     color: white;
     text-align: left;
     border: 2px solid rgba(6, 108, 148, 0.192);
-    background-image: url(C:\Users\justy\food-app\src\Images\pots-vegetables-harvest.jpg);
+    background-image: url("./Images/pots-vegetables-harvest.jpg");
     background-position: center; 
     background-repeat: no-repeat; 
     background-size:cover;
